@@ -1,15 +1,15 @@
 var allLinks = []
 var clickedLinks = []
 
-window.onload = function() {
+window.onload = () => {
   allLinks = document.getElementsByTagName('a')
   clickedLinks = JSON.parse(localStorage.getItem('clickedLinks'))
 
   console.log(JSON.stringify(clickedLinks, null, 2))
 
   for (var i = 0; i < allLinks.length; i++) {
-    allLinks[i].addEventListener('click', function() {
-      clickedContent(this.href);
+    allLinks[i].addEventListener('click', (e) => {
+      clickedContent(e.target.href)
     }, true);
   }
 }
@@ -37,6 +37,6 @@ function clickedContent(url) {
   }
 }
 
-window.onunload = function() {
+window.onunload = () => {
   localStorage.setItem('clickedLinks', JSON.stringify(clickedLinks))
 }
