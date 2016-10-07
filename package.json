@@ -1,0 +1,22 @@
+{
+  "name": "search-no-more",
+  "version": "1.0.0",
+  "description": "// user can search in browser // after clicking a search result two or more times, it is grayed out",
+  "main": "popup.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsmit291/search-no-more.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsmit291/search-no-more/issues"
+  },
+  "homepage": "https://github.com/tsmit291/search-no-more#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.2"
+  }
+}
